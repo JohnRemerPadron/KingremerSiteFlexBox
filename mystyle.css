@@ -101,7 +101,7 @@ body {
 
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: "Montserrat Medium";
 }
 
 .header {
@@ -194,9 +194,9 @@ input[type=submit]:hover {
 }
 
 #Email {
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 60px;
 }
 
 
