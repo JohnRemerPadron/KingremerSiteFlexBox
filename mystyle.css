@@ -25,6 +25,9 @@ body {
   color: black;
   
 }
+.doodle {
+	align-content: center;
+}
 
 /* Style the top navigation bar */
 .navbar {
@@ -41,6 +44,7 @@ body {
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
+	align-content: center;
 }
 
 /* Change color on hover */
@@ -65,7 +69,7 @@ body {
 
 /* Main column */
 .main {
-  flex: 70%;
+  flex: 50%;
   background-color: white;
   padding: 20px;
 }
@@ -196,3 +200,6 @@ input[type=submit]:hover {
 }
 
 
+
+.doodle {
+}
