@@ -32,7 +32,7 @@ body {
 /* Style the top navigation bar */
 .navbar {
   display: flex;
-  background-color: #333;
+ 
 	text-align: center;
 	align-items: center;
 	align-content: center;
@@ -62,16 +62,18 @@ body {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  flex: 30%;
+  flex: 100%;
   background-color: #f1f1f1;
-  padding: 20px;
+  padding: 10px;
+	
 }
 
 /* Main column */
 .main {
-  flex: 50%;
+  flex: 100%;
   background-color: white;
   padding: 20px;
+	
 }
 
 /* Fake image, just for this example */
@@ -79,6 +81,7 @@ body {
   background-color: #aaa;
   width: 0%;
   padding:0px;
+	align-content: center;
 }
 
 /* Footer */
@@ -91,7 +94,7 @@ body {
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row, .navbar {   
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 
@@ -112,15 +115,10 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 40px;
 }
 
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
+
 
 .column img {
   margin-top: 8px;
@@ -129,7 +127,7 @@ body {
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
-  .column {
+  .gallery, .farright, .main {
     flex: 50%;
     max-width: 50%;
   }
@@ -137,31 +135,29 @@ body {
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
-  .column {
+  .gallery, .farright, .main {
     flex: 100%;
     max-width: 100%;
   }
 }
 
-table, th, td {
-  border: 1px solid white;
+table, th, td, th1 {
+  border: 1px solid black;
   border-collapse: collapse;
 }
-th, td {
+th, td, th1{
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 5px;
   padding-right: 5px;
 }
-th, td {
-  background-color: #1B0B0B;
-}
-#th {
-	color: white;
+
+#th, td {
+	color: black;
 	align: center;
 }
-#th1 {
-	color: white;
+#th1, td, th {
+	color: black;
 	align: center;
 }
 *{
@@ -203,3 +199,246 @@ input[type=submit]:hover {
 
 .doodle {
 }
+
+.demo {
+	align-content: center;
+}
+
+
+
+
+
+
+
+ .header {
+      background: url("pilas.jpeg") no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px 100px;
+      position: relative;
+		
+    }
+    .header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .header h1 {
+      position: relative;
+      z-index: 2;
+      font-size: 3rem;
+		font-family: "Montserrat Medium", Montserrat;
+    }
+    .navbar {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 2;
+    }
+    .navbar a {
+      margin-center: 100px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+		align-content: center;
+    }
+    .tagline {
+      text-align: center;
+      background: white;
+      padding: 20px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #444;
+    }
+   
+    
+    .sections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 40px 30px;
+      background: #222;
+      color: white;
+    }
+    .section {
+      flex: 1 1 300px;
+      margin: 20px;
+      padding: 30px;
+      background: #333;
+      border-radius: 20px;
+      text-align: center;
+    }
+.section{
+	 font-family: "Montserrat Medium";
+}
+   
+    .section button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #f90;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+	  src: url(href="https://johnremerpadron.github.io/BlogPage/");
+    }
+    @media (max-width: 700px) {
+     .sections, .section, .farright, .main {
+        flex-direction: row;
+        align-items: center;
+      }
+		@media screen and (max-width: 700px) {
+   .navbar, .main {   
+  align-items: center;
+	   text-align: center;
+	   
+  }
+}
+		/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+	.gallery, .gallery-items, .item, .farright, .sections, .section, .main { 
+    flex-direction: row;
+		align-items: center;
+		  top: 20px;
+      right: 20px;
+      z-index: 2;
+  }
+}
+
+      .header h1 {
+        font-size: 2rem;
+      }
+      .navbar {
+        position: absolute;
+        margin-top: 10px;
+      }
+    }
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.caption {
+	align-items: left;
+}
+
+
+.mission{
+	align-content: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.body{
+	margin:0;
+	font-family: sans-serif;
+	background-color: #efefef;
+}
+*{
+	box-sizing: border-box;
+}
+
+.container{
+	max-width: 1250px;
+	margin: auto;
+}
+.gallery{
+	width: 100%;
+	float: left;
+	padding:30px 15px;
+}
+.gallery .title h1{
+	font-size:36px;
+	margin:0 0 30px;
+	color:#000000;
+	text-align: center;
+	font-family: "Montserrat Medium", Montserrat;
+}
+.gallery .gallery-items .item{
+	float: left;
+	width:25%;
+	
+}
+.gallery .gallery-items .item.hide{
+	display: none;
+}
+.gallery .gallery-items .item.show{
+	display: block;
+	display: flex;
+	animation: show .5s ease;
+}
+@keyframes show{
+    0%{
+    	opacity:0;
+    	transform: scale(0.9);
+    }
+    100%{
+    	opacity:1;
+    	transform: scale(1);
+    }
+}
+
+
+.gallery .gallery-items .item img{
+	width: 100%;
+	display: block;
+}
+.gallery .gallery-items .item .caption{
+	position: absolute;
+	left:0px;
+	bottom:0;
+	background-color: rgba(0,0,0,.5);
+	padding:10px;
+	width: 100%;
+	color:#ffffff;
+	text-align: center;
+}
+.gallery .pagination{
+	width: 100%;
+	float: left;
+	padding:15px;
+	text-align: center;
+}
+.gallery .pagination div{
+	display: inline-block;
+	margin:0 10px;
+}
+.gallery .pagination .page{
+	color:gray;
+}
+.gallery .pagination .prev,.gallery .pagination .next{
+ color:#000;
+ border:1px solid #000;
+ font-size:15px;
+ padding:7px 15px;
+ cursor: pointer;
+}
+
+.gallery .pagination .prev.disabled,
+.gallery .pagination .next.disabled{
+	border-color: gray;
+	color:gray;
+	pointer-events: none;
+}
+
+
+
